@@ -53,7 +53,8 @@ object Lists {
   }
 
   def maxImpl(xs: List[Int], curMax: Int): Int = {
-    if(xs.tail.isEmpty) {
+
+    if(xs.isEmpty) {
       curMax
     } else {
       var max = curMax
